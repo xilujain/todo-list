@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>to-do list</title>
+</head>
+
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+    <div class="container mx-auto  w-96 h-96 mt-40 rounded-xl">
+        <form action="" class="grid grid-cols-1 gap-8 relative top-8">
+            <label for="add-task" class="text-white text-3xl flex justify-center">Get Things Done!</label>
+            <div id="add-task-container" class="flex justify-evenly">
+                <!-- Display an input field where users can enter a new todo item. -->
+                <input type="text" name="add-task" id="add-task" placeholder="What is the task today?" class="border-2
+                border-cyan-400 w-72" />
+                <!-- Display an input field where users can enter a new todo item. -->
+
+                <!-- Include an "Add" button to add the entered todo item to the list. -->
+                <button type="submit" name="submit" id="add-task-btn" class="bg-cyan-600 p-4 text-white">Add task</button>
+                <!-- Include an "Add" button to add the entered todo item to the list. -->
+            </div>
+        </form>
+
+        <div id="list-of-task">
+            <ul id="list-task" class="mt-10"></ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
