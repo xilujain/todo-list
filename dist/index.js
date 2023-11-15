@@ -22,9 +22,13 @@ function render_task() {
         let new_task =
             `<li class="mt-2 bg-white">
             <div id="task" class="grid grid-cols-2 ml-2 gap-40 p-4">
-                <div id="task-container" class="flex justify-evenly">
-                    <input type="checkbox" name="" id="checked-task" onclick="check_task(${index})" />
-                    <p id="task-description${index}">${task.description}</p>
+                <div id="task-container" class="grid grid-cols-2 gap-12 mr-96">
+                    <div>
+                        <input type="checkbox" name="" id="checked-task" onclick="check_task(${index})" />
+                    </div>
+                    <div>
+                        <p id="task-description${index}" class="absolute">${task.description}</p>
+                    </div>
                 </div>
                 <div id="btns" class="flex justify-between">
                     <button type="submit" onclick="editTask(${index})">Edit</button>
